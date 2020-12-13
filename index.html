@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--<script src="//cdn.jsdelivr.net/npm/less"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+
+
+</head>
+
+<body>
+    <div class="top-header d-none d-xl-block d-lg-block mb-2">
+        <p class="text-center py-2">SİPARİŞ TAKİP</p>
+    </div>
+    <div class="container page-wrap">
+        <div class="d-none d-xl-block d-lg-block" id="header">
+            <div class=" d-flex">
+                <div class="logo mx-2">LOGO</div>
+                <div class="input-g input-group align-self-center d-block">
+                    <div>
+                        <div class="d-flex input-group-append mt-2">
+                            <input type="text" class="form-control search-input w-100" placeholder="Ürün ara...">
+                            <button class="btn btn-secondary justify-content-end" type="button"><i class="fa fa-search"></i></button>
+                        </div>
+                        <ul class="search-group">
+                            <li><a>Aksesuar</a></li>
+                            <li><a>Elbise</a></li>
+                            <li><a>Etek</a></li>
+                            <li><a>Gömlek</a></li>
+                            <li><a>Pantalon</a></li>
+                            <li><a>Tişört</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="d-flex align-self-center shopping-icons">
+                    <i class="fa fa-user border-dark mx-2" aria-hidden="true" type="button"></i>
+                    <i class="fa fa-heart mx-2" aria-hidden="true" type="button"></i>
+                    <i class="fa fa-shopping-bag mx-2" aria-hidden="true" type="button"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="mobile-view">
+
+            <div class="mobile-view-header">
+                <div class="mobile-view-close d-flex justify-content-around">
+                    <i class="fa fa fa-times js-toggle"></i>
+                </div>
+
+            </div>
+            <div class="mobile-view-body">
+                <button class="btn btn-secondary icon" style="display:none; width:50px; height: 50px;"><i class="fa fa-chevron-left " aria-hidden="true" style="font-size:24px;"></i></button>
+                <button class="btn btn-secondary icon2" style="display:none; width:50px; height: 50px;"><i class="fa fa-chevron-left " aria-hidden="true" style="font-size:24px;"></i></button>
+            </div>
+
+        </div>
+
+        <div class="d-lg-none d-xl-block d-xl-none w-100 mt-0 pt-0" id="medium">
+            <div class="d-flex  justify-content-around align-self-center top-header mt-0 mb-2 pt-1">
+                <div class="d-flex regiter">
+                    <p><a href="#" class="text-dark text-decoration-none p-1" style="border-right: 2px solid black;">Giriş Yap</a></p>
+                    <p><a href="#" class="text-dark text-decoration-none p-1">Kayıt Ol</a></p>
+                </div>
+                <p>SİPARİŞ TAKİP</p>
+            </div>
+            <div class="m d-flex">
+                <div class="d-flex justify-content-center">
+                    <div class=" ml-md-0 ml-auto py-3" style="font-size:25px; color: #000000;"><i class="fa fa-bars js-toggle"></i></div>
+                    <div class="logo mx-4">LOGO</div>
+                </div>
+                <div class="d-flex justify-content-between w-100">
+                    <div class="input-g input-group align-self-center w-100 d-block">
+
+                        <div class="d-flex input-group-append mt-2 w-100">
+                            <input type="text" class="form-control search-input w-100" placeholder="Ürün ara...">
+                            <button class="btn btn-secondary justify-content-end" type="button"><i class="fa fa-search"></i></button>
+                        </div>
+                        <ul class="search-group">
+                            <li><a>Aksesuar</a></li>
+                            <li><a>Elbise</a></li>
+                            <li><a>Etek</a></li>
+                            <li><a>Gömlek</a></li>
+                            <li><a>Pantalon</a></li>
+                            <li><a>Tişört</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div class="d-flex justify-content-end shopping-icons mt-3">
+                        <i class="fa fa-heart mx-2" aria-hidden="true" type="button"></i>
+                        <i class="fa fa-shopping-bag mx-2" aria-hidden="true" type="button"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="subnav navbar navbar-expand-lg navbar-light">
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav js-clone-nav">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="menu-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    MENU
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                            <div class="d-flex mx-4 web-dropdown">
+                                <div class="main-subject">
+                                    <h3><a class="main-category" id="woman">KADIN</a></h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex">
+                                            <p><a class="sub-category" id="ust-kadin">Üst Giyim</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Elbise</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Tişört</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Gömlek</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Bluz</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Sweatshirt</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Kazak</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item  d-flex">
+                                            <p><a class="sub-category" id="alt-kadin">Alt Giyim</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Pantolon</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Etek</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Tayt</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Şort</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Jean</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Eşofman</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item  d-flex">
+                                            <p><a class="sub-category" id="dis-kadin">Dış Giyim</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Mont</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Kaban</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Trençkot</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Ceket</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="sub-category">Aksesuar</a></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-subject">
+                                    <h3><a class="main-category" id="man">ERKEK</a></h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex">
+                                            <p><a class="sub-category" id="ust-erkek">Üst Giyim</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Tişört</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Gömlek</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Bluz</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Sweatshirt</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Kazak</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item  d-flex">
+                                            <p><a class="sub-category" id="alt-erkek">Alt Giyim</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Pantolon</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Şort</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Jean</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Eşofman</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item  d-flex">
+                                            <p><a class="sub-category" id="dis-erkek">Dış Giyim</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Mont</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Kaban</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Trençkot</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Ceket</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="sub-category">Aksesuar</a></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-subject">
+                                    <h3><a class="main-category" id="kid">ÇOCUK</a></h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex">
+                                            <p><a class="sub-category" id="ust-cocuk">Üst Giyim</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Elbise</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Tişört</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Gömlek</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Bluz</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Sweatshirt</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Kazak</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item  d-flex">
+                                            <p><a class="sub-category" id="alt-cocuk">Alt Giyim</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Pantolon</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Etek</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Şort</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Jean</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Eşofman</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item  d-flex">
+                                            <p><a class="sub-category" id="dis-cocuk">Dış Giyim</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Mont</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Kaban</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="sub-category">Aksesuar</a></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-subject">
+                                    <h3><a class="main-category" id="home">EV YAŞAM</a></h3>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item  d-flex">
+                                            <p><a class="sub-category" id="bedroom">Yatak Odası</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Nevresim</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Yatak Örtüsü</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Pike</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Yastık Kılıfı</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item  d-flex">
+                                            <p><a class="sub-category" id="bathroom">Banyo</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Banyo Paspası</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Bornoz</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Havlu</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-group-item  d-flex">
+                                            <p><a class="sub-category" id="kitchen"> Mutfak</a></p>
+                                            <ul>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Masa Örtüsü</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Küçük Ev Aletleri</a></li>
+                                                <li class="d-flex align-items-center"><i class="fa fa-angle-right" aria-hidden="true"></i><a class="product">Mutfak Tekstili</a></li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link main-link" href="#">MAĞAZALAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link main-link" href="#">İLETİŞİM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link main-link" href="#">OUTLET</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="banner-written d-flex justify-content-center">
+            <p class=" align-self-center">
+                YAZILI BANNER
+            </p>
+        </div>
+        <div class="banners d-flex justify-content-between my-2">
+            <div class="banner d-flex justify-content-center my-2">
+                <p class=" align-self-center">
+                    BANNER
+                </p>
+            </div>
+            <div class="banner d-flex justify-content-center my-2">
+                <p class=" align-self-center">
+                    BANNER
+                </p>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center" style="background-color:#814799; width:100%; height: 40vw;">
+                        <p class=" align-self-center" style="font-weight: bold; font-size: 24px; color:white; ">
+                            SLIDE 1
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center" style="background-color:#84BB7B; width:100%; height: 40vw;">
+                        <p class=" align-self-center" style="font-weight: bold; font-size: 24px; color:white; ">
+                            SLIDE 2
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center" style="background-color:#71C8D2; width:100%; height: 40vw;">
+                        <p class=" align-self-center" style="font-weight: bold; font-size: 24px; color:white; ">
+                            SLIDE 3
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <script src="./dist/built.js"></script>
+</body>
+
+</html>
